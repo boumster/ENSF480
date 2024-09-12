@@ -1,3 +1,10 @@
+/*
+* File Name: Human.h
+* Assignment: Lab 1 Exercise D
+* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+* Submission Date: Sept 13, 2024
+*/
+
 #ifndef HUMAN_H
 #define HUMAN_H
 

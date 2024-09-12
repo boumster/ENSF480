@@ -1,3 +1,10 @@
+/*
+* File Name: Point.h
+* Assignment: Lab 1 Exercise D
+* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+* Submission Date: Sept 13, 2024
+*/
+
 #ifndef POINT_H
 #define POINT_H
 

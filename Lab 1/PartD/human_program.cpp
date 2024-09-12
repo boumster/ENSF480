@@ -1,3 +1,10 @@
+/*
+* File Name: human_program.cpp
+* Assignment: Lab 1 Exercise D
+* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+* Submission Date: Sept 13, 2024
+*/
+
 #include <cstring>
 #include <iostream>
 #include "Human.h"
