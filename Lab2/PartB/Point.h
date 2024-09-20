@@ -1,3 +1,9 @@
+/*
+* File Name: Point.h
+* Assignment: Lab 2 Exercise B
+* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+* Submission Date: Sept 20, 2024
+*/
 #ifndef Point_H
 #define Point_H
 #include <iostream>

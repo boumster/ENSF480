@@ -1,3 +1,9 @@
+/*
+* File Name: Square.cpp
+* Assignment: Lab 2 Exercise B
+* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+* Submission Date: Sept 20, 2024
+*/
 #include <iostream>
 using namespace std;
 
