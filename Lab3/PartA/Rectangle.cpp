@@ -1,20 +1,20 @@
 /*
-* File Name: Rectangle.cpp
-* Assignment: Lab 3 Exercise A
-* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
-* Submission Date: Sept 27, 2024
-*/
+ * File Name: Rectangle.cpp
+ * Assignment: Lab 3 Exercise A
+ * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+ * Submission Date: Sept 27, 2024
+ */
 #include <iostream>
 #include "Rectangle.h"
 
 using namespace std;
 
-Rectangle::Rectangle(int x, int y, double side_a, double side_b, string shapeName) : Square(x, y, side_a, shapeName)
+Rectangle::Rectangle(int x, int y, double side_a, double side_b, string shapeName) : Shape(x, y, shapeName), Square(x, y, side_a, shapeName)
 {
     this->side_b = side_b;
 }
 
-Rectangle::Rectangle(const Rectangle &source) : Square(source)
+Rectangle::Rectangle(const Rectangle &source) : Shape(source), Square(source)
 {
     side_b = source.side_b;
 }

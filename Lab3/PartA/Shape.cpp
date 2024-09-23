@@ -1,9 +1,9 @@
 /*
-* File Name: Shape.cpp
-* Assignment: Lab 3 Exercise A
-* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
-* Submission Date: Sept 27, 2024
-*/
+ * File Name: Shape.cpp
+ * Assignment: Lab 3 Exercise A
+ * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+ * Submission Date: Sept 27, 2024
+ */
 #include "Shape.h"
 #include <iostream>
 #include <string.h>
@@ -47,7 +47,7 @@ const Point &Shape::getOrigin() const
     return origin;
 }
 
-const string Shape::getShapeName() const
+const string Shape::getName() const
 {
     return shapeName;
 }

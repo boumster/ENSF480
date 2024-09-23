@@ -48,7 +48,7 @@ void Square::display() const
     cout << "Perimeter: " << perimeter() << endl;
 }
 
-double Square::getSide() const
+double Square::getSideA() const
 {
     return side_a;
 }

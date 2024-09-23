@@ -21,6 +21,8 @@ public:
     virtual double area() const;
     virtual double perimeter() const;
     virtual void display() const;
+    string getName() const;
+    double distance(Shape &other) const;
 };
 
 #endif

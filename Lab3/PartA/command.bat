@@ -3,7 +3,7 @@ setlocal
 set CURRENT_DIR=%CD%
 set CYGWIN_DIR=%CURRENT_DIR:\=/%
 echo Compiling...
-C:\cygwin64\bin\bash.exe -l -c "cd \"/cygdrive/c/%CYGWIN_DIR:~2%\" && g++ -Wall -o my_program Point.h Point.cpp Shape.h Shape.cpp Square.h Square.cpp Rectangle.h Rectangle.cpp GraphicsWorld.h GraphicsWorld.cpp"
+C:\cygwin64\bin\bash.exe -l -c "cd \"/cygdrive/c/%CYGWIN_DIR:~2%\" && g++ -Wall -o my_program Point.h Point.cpp Shape.h Shape.cpp Square.h Square.cpp Rectangle.h Rectangle.cpp Circle.h Circle.cpp CurveCut.h CurveCut.cpp GraphicsWorld.h GraphicsWorld.cpp"
 if %errorlevel% neq 0 (
     echo Compilation failed.
     pause

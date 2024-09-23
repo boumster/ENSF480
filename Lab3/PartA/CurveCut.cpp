@@ -11,8 +11,8 @@
 
 using namespace std;
 
-CurveCut::CurveCut(int x, int y, double radius, double side_a, double side_b, string shapeName)
-    : Circle(x, y, radius, shapeName), Rectangle(x, y, side_a, side_b, shapeName)
+CurveCut::CurveCut(int x, int y, double side_a, double side_b, double radius, string shapeName)
+    : Shape(x, y, shapeName), Circle(x, y, radius, shapeName), Rectangle(x, y, side_a, side_b, shapeName)
 {
     if (radius > side_a || radius > side_b)
     {
@@ -21,13 +21,14 @@ CurveCut::CurveCut(int x, int y, double radius, double side_a, double side_b, st
     }
 }
 
-CurveCut::CurveCut(const CurveCut &source) : Circle(source), Rectangle(source) {
+CurveCut::CurveCut(const CurveCut &source) : Shape(source), Circle(source), Rectangle(source) {
                                              };
 
 CurveCut &CurveCut::operator=(const CurveCut &rhs)
 {
     if (this != &rhs)
     {
+        Shape::operator=(rhs);
         Circle::operator=(rhs);
         Rectangle::operator=(rhs);
     }
@@ -36,7 +37,7 @@ CurveCut &CurveCut::operator=(const CurveCut &rhs)
 
 double CurveCut::area() const
 {
-    return (Circle::area() / 4) - Rectangle::area(); // Area of a quarter circle minus the area of a rectangle as the cut is in the top left corner
+    return Rectangle::area() - (Circle::area() / 4); // Area of a quarter circle minus the area of a rectangle as the cut is in the top left corner
 }
 
 double CurveCut::perimeter() const
@@ -54,4 +55,14 @@ void CurveCut::display() const
     cout << "Width: " << getSideA() << endl;
     cout << "Length: " << getSideB() << endl;
     cout << "Radius of the cut: " << Circle::getRadius() << endl;
+}
+
+string CurveCut::getName() const
+{
+    return Shape::shapeName;
+}
+
+double CurveCut::distance(Shape &other) const
+{
+    return Shape::distance(other);
 }

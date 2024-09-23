@@ -11,7 +11,7 @@ using namespace std;
 
 #include "Shape.h"
 
-class Square : public Shape
+class Square : public virtual Shape
 {
 public:
     Square(int x, int y, double side_a, string shapeName);
