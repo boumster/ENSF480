@@ -10,38 +10,12 @@
 
 using namespace std;
 
-Point::Point()
-{
-    xM = 0;
-    yM = 0;
-    counter++;
-    idM = 1000 + counter;
-}
-
 Point::Point(double x, double y)
 {
     xM = x;
     yM = y;
     counter++;
     idM = 1000 + counter;
-}
-
-Point::Point(const Point &source)
-{
-    xM = source.xM;
-    yM = source.yM;
-    counter++;
-    idM = 1000 + counter;
-}
-
-Point &Point::operator=(const Point &rhs)
-{
-    if (this != &rhs)
-    {
-        xM = rhs.xM;
-        yM = rhs.yM;
-    }
-    return *this;
 }
 
 Point::~Point()

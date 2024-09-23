@@ -12,10 +12,7 @@ using namespace std;
 class Point
 {
 public:
-    Point();
     Point(double x, double y);
-    Point(const Point &source);
-    Point &operator=(const Point &rhs);
     ~Point();
     double x() const;
     double y() const;

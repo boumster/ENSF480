@@ -9,24 +9,9 @@ using namespace std;
 
 #include "Square.h"
 
-Square::Square(int x, int y, double side_a, string shapeName) : Shape(x, y, shapeName)
+Square::Square(int x, int y, double side_a, string shapeName) : Shape(Point(x,y), shapeName)
 {
     this->side_a = side_a;
-}
-
-Square::Square(const Square &source) : Shape(source)
-{
-    side_a = source.side_a;
-}
-
-Square &Square::operator=(const Square &rhs)
-{
-    if (this != &rhs)
-    {
-        Shape::operator=(rhs);
-        side_a = rhs.side_a;
-    }
-    return *this;
 }
 
 double Square::area() const

@@ -14,7 +14,7 @@ using namespace std;
 class Shape
 {
 public:
-    Shape(int x, int y, string shapeName);
+    Shape(const Point& p, const string shapeName);
     Shape(const Shape &source);
     Shape &operator=(const Shape &rhs);
     ~Shape();

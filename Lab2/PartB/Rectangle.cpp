@@ -14,21 +14,6 @@ Rectangle::Rectangle(int x, int y, double side_a, double side_b, string shapeNam
     this->side_b = side_b;
 }
 
-Rectangle::Rectangle(const Rectangle &source) : Square(source)
-{
-    side_b = source.side_b;
-}
-
-Rectangle &Rectangle::operator=(const Rectangle &rhs)
-{
-    if (this != &rhs)
-    {
-        Square::operator=(rhs);
-        side_b = rhs.side_b;
-    }
-    return *this;
-}
-
 double Rectangle::area() const
 {
     return side_a * side_b;

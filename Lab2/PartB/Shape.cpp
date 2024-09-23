@@ -1,9 +1,9 @@
 /*
-* File Name: Shape.cpp
-* Assignment: Lab 2 Exercise B
-* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
-* Submission Date: Sept 20, 2024
-*/
+ * File Name: Shape.cpp
+ * Assignment: Lab 2 Exercise B
+ * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+ * Submission Date: Sept 20, 2024
+ */
 #include "Shape.h"
 #include <iostream>
 #include <string.h>
@@ -11,16 +11,14 @@
 
 using namespace std;
 
-Shape::Shape(int x, int y, string shapeName)
+Shape::Shape(const Point &p, const string shapeName) : origin(p)
 {
-    this->origin = Point(x, y);
     this->shapeName = new char[shapeName.length() + 1];
     strcpy(this->shapeName, shapeName.c_str());
 }
 
-Shape::Shape(const Shape &source)
+Shape::Shape(const Shape &source) : origin(source.origin)
 {
-    origin = source.origin;
     shapeName = new char[strlen(source.shapeName) + 1];
     strcpy(shapeName, source.shapeName);
 }
