@@ -15,9 +15,7 @@
 class CurveCut : public Circle, public Rectangle
 {
 public:
-    CurveCut(int x, int y, double radius, double side_a, double side_b, string shapeName);
-    CurveCut(const CurveCut &source);
-    CurveCut &operator=(const CurveCut &rhs);
+    CurveCut(double x, double y, double radius, double side_a, double side_b, string shapeName);
     virtual double area() const;
     virtual double perimeter() const;
     virtual void display() const;

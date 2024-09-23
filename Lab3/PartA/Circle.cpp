@@ -10,24 +10,9 @@
 
 using namespace std;
 
-Circle::Circle(int x, int y, double radius, string shapeName) : Shape(x, y, shapeName)
+Circle::Circle(double x, double y, double radius, string shapeName) : Shape(Point(x,y), shapeName)
 {
     this->radius = radius;
-}
-
-Circle::Circle(const Circle &source) : Shape(source)
-{
-    radius = source.radius;
-}
-
-Circle &Circle::operator=(const Circle &rhs)
-{
-    if (this != &rhs)
-    {
-        Shape::operator=(rhs);
-        radius = rhs.radius;
-    }
-    return *this;
 }
 
 double Circle::area() const

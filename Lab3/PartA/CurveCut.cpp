@@ -11,28 +11,14 @@
 
 using namespace std;
 
-CurveCut::CurveCut(int x, int y, double side_a, double side_b, double radius, string shapeName)
-    : Shape(x, y, shapeName), Circle(x, y, radius, shapeName), Rectangle(x, y, side_a, side_b, shapeName)
+CurveCut::CurveCut(double x, double y, double side_a, double side_b, double radius, string shapeName)
+    : Shape(Point(x,y), shapeName), Circle(x, y, radius, shapeName), Rectangle(x, y, side_a, side_b, shapeName)
 {
     if (radius > side_a || radius > side_b)
     {
         cout << "Error: The radius of the cut cannot be larger than the sides of the rectangle." << endl;
         exit(1);
     }
-}
-
-CurveCut::CurveCut(const CurveCut &source) : Shape(source), Circle(source), Rectangle(source) {
-                                             };
-
-CurveCut &CurveCut::operator=(const CurveCut &rhs)
-{
-    if (this != &rhs)
-    {
-        Shape::operator=(rhs);
-        Circle::operator=(rhs);
-        Rectangle::operator=(rhs);
-    }
-    return *this;
 }
 
 double CurveCut::area() const

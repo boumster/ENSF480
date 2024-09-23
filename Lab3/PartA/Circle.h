@@ -14,9 +14,7 @@ using namespace std;
 class Circle : public virtual Shape
 {
 public:
-    Circle(int x, int y, double radius, string shapeName);
-    Circle(const Circle &source);
-    Circle &operator=(const Circle &rhs);
+    Circle(double x, double y, double radius, string shapeName);
     virtual double area() const;
     virtual double perimeter() const;
     virtual void display() const;

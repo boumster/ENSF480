@@ -15,8 +15,6 @@ class Rectangle : public Square
 {
 public:
     Rectangle(int x, int y, double side_a, double side_b, string shapeName);
-    Rectangle(const Rectangle &source);
-    Rectangle &operator=(const Rectangle &rhs);
     double area() const;
     double perimeter() const;
     void display() const;

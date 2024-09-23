@@ -107,14 +107,14 @@ void GraphicsWorld::run()
     sh[2] = &c;
     sh[3] = &rc;
     sh[0]->display();
-    cout << "\nthe area of " << sh[0]->getName() << "is: " << sh[0]->area();
-    cout << "\nthe perimeter of " << sh[0]->getName() << " is: " << sh[0]->perimeter();
+    cout << "\nthe area of " << sh[0]->getName() << " is: " << sh[0]->area();
+    cout << "\nthe perimeter of " << sh[0]->getName() << " is: " << sh[0]->perimeter() << endl;
     sh[1]->display();
     cout << "\nthe area of " << sh[1]->getName() << "is: " << sh[1]->area();
-    cout << "\nthe perimeter of " << sh[0]->getName() << " is: " << sh[1]->perimeter();
+    cout << "\nthe perimeter of " << sh[0]->getName() << " is: " << sh[1]->perimeter() << endl;
     sh[2]->display();
     cout << "\nthe area of " << sh[2]->getName() << "is: " << sh[2]->area();
-    cout << "\nthe circumference of " << sh[2]->getName() << " is: " << sh[2]->perimeter();
+    cout << "\nthe circumference of " << sh[2]->getName() << " is: " << sh[2]->perimeter() << endl;
     sh[3]->display();
     cout << "\nthe area of " << sh[3]->getName() << "is: " << sh[3]->area();
     cout << "\nthe perimeter of " << sh[3]->getName() << " is: " << sh[3]->perimeter();

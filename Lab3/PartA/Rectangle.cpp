@@ -9,24 +9,9 @@
 
 using namespace std;
 
-Rectangle::Rectangle(int x, int y, double side_a, double side_b, string shapeName) : Shape(x, y, shapeName), Square(x, y, side_a, shapeName)
+Rectangle::Rectangle(int x, int y, double side_a, double side_b, string shapeName) : Shape(Point(x,y), shapeName), Square(x, y, side_a, shapeName)
 {
     this->side_b = side_b;
-}
-
-Rectangle::Rectangle(const Rectangle &source) : Shape(source), Square(source)
-{
-    side_b = source.side_b;
-}
-
-Rectangle &Rectangle::operator=(const Rectangle &rhs)
-{
-    if (this != &rhs)
-    {
-        Square::operator=(rhs);
-        side_b = rhs.side_b;
-    }
-    return *this;
 }
 
 double Rectangle::area() const

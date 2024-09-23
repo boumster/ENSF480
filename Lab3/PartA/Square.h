@@ -15,8 +15,6 @@ class Square : public virtual Shape
 {
 public:
     Square(int x, int y, double side_a, string shapeName);
-    Square(const Square &source);
-    Square &operator=(const Square &rhs);
     virtual double area() const;
     virtual double perimeter() const;
     virtual void display() const;
