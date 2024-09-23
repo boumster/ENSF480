@@ -43,11 +43,6 @@ void CurveCut::display() const
     cout << "Radius of the cut: " << Circle::getRadius() << endl;
 }
 
-string CurveCut::getName() const
-{
-    return Shape::shapeName;
-}
-
 double CurveCut::distance(Shape &other) const
 {
     return Shape::distance(other);
