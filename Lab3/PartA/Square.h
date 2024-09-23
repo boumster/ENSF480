@@ -1,8 +1,8 @@
 /*
 * File Name: Square.h
-* Assignment: Lab 2 Exercise B
+* Assignment: Lab 3 Exercise A
 * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
-* Submission Date: Sept 20, 2024
+* Submission Date: Sept 27, 2024
 */
 #ifndef Square_H
 #define Square_H
