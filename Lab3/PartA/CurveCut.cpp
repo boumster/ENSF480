@@ -11,8 +11,15 @@
 
 using namespace std;
 
-CurveCut::CurveCut(int x, int y, double radius, double side_a, double side_b, string shapeName) : Circle(x, y, radius, shapeName), Rectangle(x, y, side_a, side_b, shapeName) {
-                                                                                                  };
+CurveCut::CurveCut(int x, int y, double radius, double side_a, double side_b, string shapeName)
+    : Circle(x, y, radius, shapeName), Rectangle(x, y, side_a, side_b, shapeName)
+{
+    if (radius > side_a || radius > side_b)
+    {
+        cout << "Error: The radius of the cut cannot be larger than the sides of the rectangle." << endl;
+        exit(1);
+    }
+}
 
 CurveCut::CurveCut(const CurveCut &source) : Circle(source), Rectangle(source) {
                                              };
@@ -34,16 +41,17 @@ double CurveCut::area() const
 
 double CurveCut::perimeter() const
 {
-    return (Circle::perimeter() / 4) + (2 * Rectangle::perimeter()); // Perimeter of a quarter circle plus the perimeter of a rectangle as the cut is in the top left corner
+    double circlePerimeter = Circle::perimeter() / 4; // Quarter of the circle's perimeter within the cut
+    double rectanglePerimeter = Rectangle::perimeter();
+    double result = circlePerimeter + rectanglePerimeter - (2 * Circle::getRadius()); // Subtracting the length of the cut from the perimeter
+    return result;
 }
 
 void CurveCut::display() const
 {
     cout << "CurveCut Name: " << Shape::shapeName << endl;
     Shape::origin.display();
-    cout << "Radius: " << Circle::getRadius() << endl;
-    cout << "Side A: " << getSideA() << endl;
-    cout << "Side B: " << getSideB() << endl;
-    cout << "Area: " << area() << endl;
-    cout << "Perimeter: " << perimeter() << endl;
+    cout << "Width: " << getSideA() << endl;
+    cout << "Length: " << getSideB() << endl;
+    cout << "Radius of the cut: " << Circle::getRadius() << endl;
 }
