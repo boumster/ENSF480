@@ -1,9 +1,9 @@
 /*
-* File Name: GraphicsWorld.cpp
-* Assignment: Lab 2 Exercise B
-* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
-* Submission Date: Sept 20, 2024
-*/
+ * File Name: GraphicsWorld.cpp
+ * Assignment: Lab 2 Exercise B
+ * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+ * Submission Date: Sept 20, 2024
+ */
 #include "GraphicsWorld.h"
 #include "Rectangle.h"
 #include "Square.h"

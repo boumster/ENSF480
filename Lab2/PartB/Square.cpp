@@ -1,15 +1,15 @@
 /*
-* File Name: Square.cpp
-* Assignment: Lab 2 Exercise B
-* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
-* Submission Date: Sept 20, 2024
-*/
+ * File Name: Square.cpp
+ * Assignment: Lab 2 Exercise B
+ * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+ * Submission Date: Sept 20, 2024
+ */
 #include <iostream>
 using namespace std;
 
 #include "Square.h"
 
-Square::Square(int x, int y, double side_a, string shapeName) : Shape(Point(x,y), shapeName)
+Square::Square(int x, int y, double side_a, string shapeName) : Shape(Point(x, y), shapeName)
 {
     this->side_a = side_a;
 }

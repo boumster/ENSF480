@@ -1,9 +1,9 @@
 /*
-* File Name: Square.h
-* Assignment: Lab 2 Exercise B
-* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
-* Submission Date: Sept 20, 2024
-*/
+ * File Name: Square.h
+ * Assignment: Lab 2 Exercise B
+ * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+ * Submission Date: Sept 20, 2024
+ */
 #ifndef Square_H
 #define Square_H
 #include <iostream>

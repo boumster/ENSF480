@@ -1,9 +1,9 @@
 /*
-* File Name: Point.h
-* Assignment: Lab 2 Exercise B
-* Completed by: Jaden Haug-Uhrin and Phoenix Bouma
-* Submission Date: Sept 20, 2024
-*/
+ * File Name: Point.h
+ * Assignment: Lab 2 Exercise B
+ * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+ * Submission Date: Sept 20, 2024
+ */
 #ifndef Point_H
 #define Point_H
 #include <iostream>
@@ -20,7 +20,7 @@ public:
     void sety(double y);
     void display() const;
     double distance(const Point &p) const;
-    static double distance (const Point &a, const Point &b);
+    static double distance(const Point &a, const Point &b);
     static int count();
     int id() const;
 
