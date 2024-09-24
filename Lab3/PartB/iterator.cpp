@@ -1,6 +1,9 @@
-// iterator.cpp
-// ENSF 480 - Fall 2022 - Lab 3, Ex B
-
+/*
+ * File Name: iterator.cpp
+ * Assignment: Lab 3 Exercise B
+ * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
+ * Submission Date: Sept 27, 2024
+ */
 #include <iostream>
 #include <assert.h>
 #include "mystring2.h"
