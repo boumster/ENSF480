@@ -230,22 +230,22 @@ int main()
 
   for (int i = 0; i < 3; i++)
     cout << endl
-         << iters++.c_str();
+         << iters++;
 
   cout << "\n\nTesting Prefix --:";
   for (int i = 0; i < 3; i++)
     cout << endl
-         << (--iters).c_str();
+         << --iters;
 
   cout << "\n\nTesting Prefix ++:";
   for (int i = 0; i < 3; i++)
     cout << endl
-         << (++iters).c_str();
+         << ++iters;
 
   cout << "\n\nTesting Postfix --";
   for (int i = 0; i < 3; i++)
     cout << endl
-         << (iters--).c_str();
+         << iters--;
 
   cout << endl;
   cout << "Testing a <char *> Vector: " << endl;
