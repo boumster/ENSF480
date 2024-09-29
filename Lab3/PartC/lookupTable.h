@@ -1,5 +1,5 @@
 /*
- * File Name: lookupTable.cpp
+ * File Name: lookupTable.h
  * Assignment: Lab 3 Exercise c
  * Completed by: Jaden Haug-Uhrin and Phoenix Bouma
  * Submission Date: Sept 27, 2024
